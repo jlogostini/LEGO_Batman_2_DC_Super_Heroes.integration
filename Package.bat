@@ -10,4 +10,4 @@ move local-art assets
 move mod-types assets
 move scripts tools
 move programs tools
-Compress-Archive assets LEGO_Batman_2_DC_Super_Heroes.integration
+powershell Compress-Archive . publish.zip
