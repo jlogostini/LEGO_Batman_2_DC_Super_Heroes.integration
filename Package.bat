@@ -1,8 +1,8 @@
 mkdir .temp-253476
-xcopy assets .temp-253476 /S /Y /R
-xcopy tools .temp-253476 /S /Y /R
-copy config.json .temp-253476
-cd .temp-253476
+xcopy assets .temp-253476/LEGO_Batman_2_DC_Super_Heroes.integration /S /Y /R
+xcopy tools .temp-253476/LEGO_Batman_2_DC_Super_Heroes.integration /S /Y /R
+copy config.json .temp-253476/LEGO_Batman_2_DC_Super_Heroes.integration
+cd .temp-253476/LEGO_Batman_2_DC_Super_Heroes.integration
 mkdir assets
 mkdir tools
 move art assets
