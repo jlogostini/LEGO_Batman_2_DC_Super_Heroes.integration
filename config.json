@@ -1,0 +1,92 @@
+﻿    {
+       "IntegrationID": "game-name-integration",
+       "Version": "1.0",
+       "DisplayName": "Game Name",
+       "DisplayIcon": "assets\\icon\\icon-small.png",
+       "DisplayImage": "assets\\art\\en\\art-cover-vertical.png",
+       "Author": {
+       "Name": "Integration Author",
+       "Role": "Integration Creator"
+    },
+       "ModCompatibilityVersion": "1.0",
+       "TargetApplicationVersion": "1.1",
+       "MinimumApplicationVersion": "1.1",
+       "QuickBMSScript": "tools\\scripts\\quick_bms\\quick.bms",
+       "QuickBMSExtractMode": "RootFolder",
+       "Categories": [
+    {
+       "Category": "character",
+       "DisplayName": "Characters",
+       "IconPath": "assets\\type\\type-character.svg"
+    },
+    {
+       "Category": "vehicle",
+       "DisplayName": "Vehicles",
+       "IconPath": "assets\\type\\type-vehicle.svg"
+    },
+    {
+       "Category": "level",
+       "DisplayName": "Levels",
+       "IconPath": "assets\\type\\type-level.svg"
+    },
+    {
+       "Category": "audio",
+       "DisplayName": "Audio",
+       "IconPath": "assets\\type\\type-audio.svg"
+    },
+    {
+       "Category": "ui",
+       "DisplayName": "User Interface",
+       "IconPath": "assets\\type\\type-ui.svg"
+    },
+    {
+       "Category": "misc",
+       "DisplayName": "Miscellaneous",
+       "IconPath": "assets\\type\\type-misc.svg"
+    }
+  ],
+       "Settings": [
+    {
+       "Category": "General",
+       "Settings": [
+    {
+       "SettingName": "Installation Path",
+       "SettingID": "install-path",
+       "Type": "text",
+       "DefaultValue": "",
+       "Validations": [
+    {
+       "ValidationType": "Regex",
+       "ErrorMessage": "Install path cannot contain the following symbols <>\"|?*",
+       "Regex": "^[^<>\"|?*]+$"
+    },
+    {
+       "ValidationType": "PathExists",
+       "ErrorMessage": "The path entered did not contain the required executable ( Game.exe ) check that you are using a legitimate copy",
+       "AllowedPathSuffixes": [
+       "Game.exe"
+  ]
+    },
+    {
+       "ValidationType": "MandatoryField",
+       "ErrorMessage": "Install path required",
+       "Required": true
+    }
+  ],
+       "Options": null
+    }
+  ]
+    }
+  ],
+       "SetupActions": [
+    {
+       "Action": "QuickBMSExtract",
+       "DeleteWhenComplete": true,
+       "UseAutoMapping": false,
+       "TargetFiles": [
+       "[Game]\\GAME0.DAT",
+       "[Game]\\GAME1.DAT"
+      ]
+    }
+  ]
+}
