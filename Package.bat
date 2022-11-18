@@ -13,4 +13,4 @@ move programs tools
 mkdir zip
 move assets zip
 move tools zip
-move config.json
+move config.json zip
