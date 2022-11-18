@@ -14,4 +14,4 @@ mkdir zip-folder
 move assets zip-folder
 move tools zip-folder
 move config.json zip-folder
-zip -r zip-folder
+zip -r LEGO_Batman_2_DC_Super_Heroes.integration zip-folder
