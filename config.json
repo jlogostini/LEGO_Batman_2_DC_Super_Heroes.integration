@@ -26,47 +26,47 @@
     },
     {
        "Category": "visual",
-       "DisplayName": "visuals",
+       "DisplayName": "Visuals",
        "IconPath": "assets\\mod-types\\visual.svg"
     },
     {
        "Category": "environment",
-       "DisplayName": "environment",
+       "DisplayName": "Environments",
        "IconPath": "assets\\mod-types\\environment.svg"
     },
     {
        "Category": "vehicle",
-       "DisplayName": "vehicle",
+       "DisplayName": "Vehicles",
        "IconPath": "assets\\mod-types\\vehicle.svg"
     },
     {
        "Category": "animation",
-       "DisplayName": "animation",
+       "DisplayName": "Animations",
        "IconPath": "assets\\mod-types\\animation.svg"
     },
     {
        "Category": "audio",
-       "DisplayName": "audio",
+       "DisplayName": "Audio",
        "IconPath": "assets\\mod-types\\audio.svg"
     },
     {
        "Category": "bugfix",
-       "DisplayName": "bugfix",
+       "DisplayName": "Bug Fixes",
        "IconPath": "assets\\mod-types\\bugfix.svg"
     },
     {
        "Category": "ui",
-       "DisplayName": "ui",
+       "DisplayName": "User Interface",
        "IconPath": "assets\\mod-types\\ui.svg"
     },
     {
        "Category": "item",
-       "DisplayName": "item",
+       "DisplayName": "Items",
        "IconPath": "assets\\mod-types\\item.svg"
     },
     {
        "Category": "misc",
-       "DisplayName": "misc",
+       "DisplayName": "Miscellaneous",
        "IconPath": "assets\\mod-types\\misc.svg"
     }
 
