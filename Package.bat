@@ -10,8 +10,4 @@ move local-art assets
 move mod-types assets
 move scripts tools
 move programs tools
-mkdir zip-folder
-move assets zip-folder
-move tools zip-folder
-move config.json zip-folder
-zip -r LEGO_Batman_2_DC_Super_Heroes.integration zip-folder
+Compress-Archive assets LEGO_Batman_2_DC_Super_Heroes.integration
