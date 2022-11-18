@@ -10,4 +10,4 @@ move local-art assets
 move mod-types assets
 move scripts tools
 move programs tools
-powershell Compress-Archive .temp-253476 LEGO_Batman_2_DC_Super_Heroes.zip
+powershell Compress-Archive ".temp-253476" LEGO_Batman_2_DC_Super_Heroes.zip
