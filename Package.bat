@@ -8,3 +8,5 @@ mkdir tools
 move art assets
 move local-art assets
 move mod-types assets
+move scripts tools
+move programs tools
