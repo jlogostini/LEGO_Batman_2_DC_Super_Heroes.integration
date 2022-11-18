@@ -10,7 +10,8 @@ move local-art assets
 move mod-types assets
 move scripts tools
 move programs tools
-mkdir zip
-move assets zip
-move tools zip
-move config.json zip
+mkdir zip-folder
+move assets zip-folder
+move tools zip-folder
+move config.json zip-folder
+zip -r zip-folder
