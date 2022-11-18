@@ -5,3 +5,6 @@ copy config.json .temp-253476
 cd .temp-253476
 mkdir assets
 mkdir tools
+move art assets
+move local-art assets
+move mod-types assets
