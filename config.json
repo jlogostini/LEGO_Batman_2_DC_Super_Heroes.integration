@@ -71,73 +71,78 @@
 
     	],
     	"Settings": [{
-    		"Category": "General",
-    		"Settings": [{
-    				"SettingID": "game-source",
-    				"SettingName": "Game Source",
-    				"Description": "Allows you to set wear the game is from for platform specific mod patches",
-    				"Type": "Dropdown",
-    				"DefaultValue": "steam",
-    				"Options": [{
-    						"Text": "Steam",
-    						"Value": "steam"
-    					},
-    					{
-    						"Text": "GOG",
-    						"Value": "gog"
-    					},
-    					{
-    						"Text": "Epic Games",
-    						"Value": "epic-games"
-    					},
-    					{
-    						"Text": "No DRM",
-    						"Value": "no-drm"
-    					}
-    				]
-    			},
-    			{
-    				"SettingID": "install-path",
-    				"SettingName": "Game Installation Path",
-    				"Type": "text",
-    				"Description": "Sets the game installation path so mods can find the game",
-    				"DefaultValue": "",
-    				"Validations": [{
-    						"ValidationType": "Regex",
-    						"ErrorMessage": "Install path cannot contain the following symbols <>\"|?*",
-    						"Regex": "^[^<>\"|?*]+$"
-    					},
-    					{
-    						"ValidationType": "PathExists",
-    						"ErrorMessage": "The path that was entered does not contain ( LEGOBatman2.exe )",
-    						"AllowedPathSuffixes": [
-    							"LEGOBatman2.exe"
-    						]
-    					},
-    					{
-    						"ValidationType": "MandatoryField",
-    						"ErrorMessage": "Install path is a required field",
-    						"Required": true
-    					}
-    				],
-    				"Options": null
-    			},
-    			{
-    				"SettingID": "dlc-the-heroes-character-pack",
-    				"SettingName": "DLC - The Heroes Character Pack",
-    				"Type": "Checkbox",
-    				"DefaultValue": true,
-    				"Description": "When enabled, this will unpack the The Heroes Character Pack so it can be modded if you do not have this DLC installed wean this is checked no mods will install"
-    			},
-    			{
-    				"SettingID": "dlc-the-villains-character-pack",
-    				"SettingName": "DLC - The Heroes Villains Pack",
-    				"Type": "Checkbox",
-    				"DefaultValue": true,
-    				"Description": "When enabled, this will unpack the The Villains Character Pack so it can be modded if you do not have this DLC installed wean this is checked no mods will install"
-    			}
-    		]
-    	}],
+    			"Category": "Install Settings",
+    			"Settings": [{
+    					"SettingID": "game-source",
+    					"SettingName": "Game Source",
+    					"Description": "Allows you to set wear the game is from for platform specific mod patches",
+    					"Type": "Dropdown",
+    					"DefaultValue": "steam",
+    					"Options": [{
+    							"Text": "Steam",
+    							"Value": "steam"
+    						},
+    						{
+    							"Text": "GOG",
+    							"Value": "gog"
+    						},
+    						{
+    							"Text": "Epic Games",
+    							"Value": "epic-games"
+    						},
+    						{
+    							"Text": "No DRM",
+    							"Value": "no-drm"
+    						}
+    					]
+    				},
+    				{
+    					"SettingID": "install-path",
+    					"SettingName": "Game Installation Path",
+    					"Type": "text",
+    					"Description": "Sets the game installation path so mods can find the game",
+    					"DefaultValue": "",
+    					"Validations": [{
+    							"ValidationType": "Regex",
+    							"ErrorMessage": "Install path cannot contain the following symbols <>\"|?*",
+    							"Regex": "^[^<>\"|?*]+$"
+    						},
+    						{
+    							"ValidationType": "PathExists",
+    							"ErrorMessage": "The path that was entered does not contain ( LEGOBatman2.exe )",
+    							"AllowedPathSuffixes": [
+    								"LEGOBatman2.exe"
+    							]
+    						},
+    						{
+    							"ValidationType": "MandatoryField",
+    							"ErrorMessage": "Install path is a required field",
+    							"Required": true
+    						}
+    					],
+    					"Options": null
+    				}
+    			]
+    		},
+    		{
+    			"Category": "Installed DLC",
+    			"Settings": [{
+    					"SettingID": "dlc-the-heroes-character-pack",
+    					"SettingName": "The Heroes Character Pack",
+    					"Type": "Checkbox",
+    					"DefaultValue": true,
+    					"Description": "When enabled, this will unpack the The Heroes Character Pack so it can be modded if you do not have this DLC installed wean this is checked no mods will install"
+    				},
+    				{
+    					"SettingID": "dlc-the-villains-character-pack",
+    					"SettingName": "The Heroes Villains Pack",
+    					"Type": "Checkbox",
+    					"DefaultValue": true,
+    					"Description": "When enabled, this will unpack the The Villains Character Pack so it can be modded if you do not have this DLC installed wean this is checked no mods will install"
+    				}
+    			]
+    		}
+    	],
     	"SetupActions": [{
     		"Action": "QuickBMSExtract",
     		"DeleteWhenComplete": true,
